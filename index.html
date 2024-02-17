@@ -19,9 +19,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
     </head>
-    <body class="">
+    <body class>
         <!--header start -->
-        <header class="">
+        <header class>
             <!-- navbar  -->
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -38,9 +38,9 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-2xl">Uttora Parbahan</a>
@@ -54,13 +54,64 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                   <div class="flex items-center gap-2 btn text-2xl text-[#1DD100]">
-                    <a>Bus</a>
-                    <img class="" src="images/bus-icon.png" alt="">
-                   </div>
+                    <div
+                        class="flex items-center gap-2 btn text-2xl text-[#1DD100]">
+                        <a>Bus</a>
+                        <img class src="images/bus-icon.png" alt>
+                    </div>
                 </div>
             </div>
+            <!-- banner -->
+            <section class="h-[600px]">
+               <div  class="bg-[url('/images/banner.png')] bg-no-repeat bg-center h-full flex justify-center items-center">
+                <div class="text-center">
+                    <h3 class="text-6xl text-white">End-to-End Travel with <br>
+                             <span class="text-[#1DD100]"> Uttara Paribahan</span> </h3>
+                             <p class="mt-5 text-white">Enjoy your journey with Uttora Travels and get Discout.</p>
+                             <button class="mt-5 btn bg-[#1DD100] border-none text-black font-bold">Buy Ticket</button>
+                </div>
+               </div>
+            </section>
         </header>
         <!-- header end -->
+        <!-- main start -->
+        <main class="mt-24 font-raleway font-semibold text-3xl text-center">
+            <h3>Best offers for you </h3>
+            <!-- offer container -->
+            <section class="mt-20 flex flex-col lg:flex-row justify-evenly gap-10">
+
+                <div class="card w-[400px] h-56 bg-base-100 shadow-xl bg-[#FFBF0F]">
+                    <div class="card-body flex flex-row justify-between items-center gap-5 bg-[url('/images/cupon-devider.png')] bg-no-repeat bg-center">
+                        <div>
+                            <h2 class="text-[#030712CC] text-3xl font-extrabold">15% OFF</h2>
+                            <p class="text-xl">on your next purchase</p>
+                            <p class="text-[#03071280] text-xs"> use by January 2024</p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl text-[#030712]">NEW15</h2>
+                            <P class="text-xs text-[#03071266]">Coupon Code</P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-[400px] h-56 bg-base-100 shadow-xl bg-[#F78C9C]">
+                    <div class="card-body flex flex-row justify-evenly items-center gap-5 bg-[url('/images/cupon-devider.png')] bg-no-repeat bg-center">
+                        <div>
+                            <h2 class="text-[#030712CC] text-3xl font-extrabold">20% OFF</h2>
+                            <p class="text-xl">on your next purchase</p>
+                            <p class="text-[#03071280] text-xs"> use by January 2024</p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl text-[#030712]">Couple 20</h2>
+                            <P class="text-xs text-[#03071266]">Coupon Code</P>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <div class="mt-20">
+                <button class="btn bg-[#1DD100]">See All Offers</button>
+            </div>
+        </main>
     </body>
 </html>
