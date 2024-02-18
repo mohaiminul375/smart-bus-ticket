@@ -6,27 +6,32 @@ function calculateCoupon(totalPrice){
     } else{
         document.getElementById('btn-apply').setAttribute('disabled',true)
     }
-        //  calculate discount
-    // document.getElementById('btn-apply').addEventListener('click',function(){
-    //     if(inputValue === 'NEW15'){
-    //         console.log(totalPrice)
-    //         const discount = totalPrice * .15;
-    //         console.log(discount)
-    //         const grandTotal = totalPrice - discount;
-    //         const grandTotalString = document.getElementById('grand-total');
-    //         // grandTotalString.innerText = grandTotal;
-    //     }
-    //   })
+        
   })
   document.getElementById('btn-apply').addEventListener('click',function(){
     console.log('clicked')
     const inputValue = document.getElementById('input-coupon').value
     if(inputValue === 'NEW15'){
         const discount = totalPrice * .15;
+        const grandTotal = totalPrice - discount;
+        console.log(grandTotal)
         // console.log('my discount is',discount)
         const discountAmountString = document.getElementById('discount-amount')
-        discountAmountString.innerText = discount
-    }
+        discountAmountString.innerText = discount;
+        const grandTotalString = document.getElementById('grand-total')
+        grandTotalString.innerText = grandTotal;
+        console.log(grandTotalString)
+    } else if(inputValue === 'Couple 20'){
+        const discount = totalPrice * .20;
+        const grandTotal = totalPrice - discount;
+        // console.log('my discount is',discount)
+        const discountAmountString = document.getElementById('discount-amount')
+        discountAmountString.innerText = discount;
+        const grandTotalString = document.getElementById('grand-total')
+        grandTotalString.innerText = grandTotal;
+    } 
+    // hide input field
+  document.getElementById('input-container').style.display= 'none';
   })
 
 }
