@@ -19,10 +19,13 @@ function calculateCoupon(totalPrice){
     //   })
   })
   document.getElementById('btn-apply').addEventListener('click',function(){
+    console.log('clicked')
     const inputValue = document.getElementById('input-coupon').value
     if(inputValue === 'NEW15'){
         const discount = totalPrice * .15;
-        console.log(discount)
+        // console.log('my discount is',discount)
+        const discountAmountString = document.getElementById('discount-amount')
+        discountAmountString.innerText = discount
     }
   })
 
