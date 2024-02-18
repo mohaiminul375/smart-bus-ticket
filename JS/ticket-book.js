@@ -13,8 +13,7 @@ function bookTicket(seat) {
   serial++
   seat.style.backgroundColor = '#1DD100'
   seat.style.color = 'white'
-  // let seatsBookingCount = document.getElementById('seat-booking-count').innerText;
-  // let bookingCount = parseInt(seatsBookingCount)
+  
   const fairSummaryTable = document.getElementById("table-body");
   const tableRow = document.createElement("tr");
   tableRow.innerHTML = `
@@ -26,7 +25,7 @@ function bookTicket(seat) {
                                     
     `;
   fairSummaryTable.append(tableRow);
-  
+ calculateTotalFair(serial)
   
   bookedSeat.push(seat.innerText);
   
