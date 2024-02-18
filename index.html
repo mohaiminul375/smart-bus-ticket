@@ -372,17 +372,17 @@
                             </div>
                             <div class="flex justify-center mt-3">
                                 <div class="join">
-                                    <input
+                                    <input id="input-coupon"
                                         class="input input-bordered join-item w-3/4"
                                         placeholder="Have any copupon?" />
-                                    <button
-                                        class="btn bg-[#1DD100] join-item rounded-r-full text-white">Apply</button>
+                                    <button id="btn-apply"
+                                        class="btn bg-[#1DD100] join-item rounded-r-full text-white" disabled>Apply</button>
                                 </div>
                             </div>
                             <div class="mt-5">
                                 <div class="flex justify-between text-xl">
                                     <p>Grand Total</p>
-                                    <p>BDT1100</p>
+                                    <p>BDT<span class="grand-total">00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -426,6 +426,8 @@
             <!-- script -->
             <script src="JS/utility.js"></script>
             <script src="JS/ticket-book.js"></script>
+            <script src="JS/seat-calculate.js"></script>
             <script src="JS/calculate-fair.js"></script>
+            <script src="JS/calculate-cupon.js"></script>
         </body>
     </html>

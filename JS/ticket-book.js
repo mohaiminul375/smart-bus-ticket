@@ -26,6 +26,7 @@ function bookTicket(seat) {
     `;
   fairSummaryTable.append(tableRow);
  calculateTotalFair(serial)
+ seatCalculation(serial)
   
   bookedSeat.push(seat.innerText);
   
