@@ -1,4 +1,4 @@
-function calculateCoupon(totalPrice){
+function calculateCoupon(totalPrice,serial){
   document.getElementById('input-coupon').addEventListener('keyup',function(event){
     const inputValue = event.target.value;
     if(inputValue === 'NEW15' || inputValue === 'Couple 20'){
@@ -33,5 +33,5 @@ function calculateCoupon(totalPrice){
     // hide input field
   document.getElementById('input-container').style.display= 'none';
   })
-
+  
 }

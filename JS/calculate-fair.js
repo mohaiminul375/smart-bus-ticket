@@ -6,6 +6,8 @@ function calculateTotalFair(serial) {
     // console.log(totalPrice,'total price form')
     const grandTotalString = document.getElementById('grand-total')
     grandTotalString.innerText = totalPrice;
-  calculateCoupon(totalPrice)
-//   return totalPrice;
+  calculateCoupon(totalPrice,serial)
+  if(serial !== 0){
+    document.getElementById('btn-next').removeAttribute('disabled')
+  }
 }
