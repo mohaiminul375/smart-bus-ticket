@@ -19,9 +19,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
     </head>
-    <body class="w-full lg:max-w-screen-xl mx-auto">
+    <body class="">
         <!--header start -->
-        <header class>
+        <header class="w-full lg:max-w-screen-xl mx-auto">
             <!-- navbar  -->
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -81,7 +81,7 @@
         </header>
         <!-- header end -->
         <!-- main start -->
-        <main class="mt-24 font-raleway font-semibold text-3xl">
+        <main class="mt-24 font-raleway font-semibold text-3xl w-full lg:max-w-screen-xl mx-auto">
             <h3 class="text-center">Best offers for you </h3>
             <!-- offer container -->
             <section
@@ -359,11 +359,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="table-body">
-                                    <!-- row 1 -->
-                                    
-                                    <!-- row 2 -->
-                                    
-                                    <!-- row 3 -->
+                                  
                                     
                                 </tbody>
                             </table>
@@ -442,8 +438,31 @@
                   </dialog>
             </main>
             <!-- footer -->
-            <footer class="mt-28">
+            <footer class="w-full mt-28 bg-[#030712]">
+                <div class="p-8">
+                    <div class="flex flex-col lg:flex-row justify-between ">
+                         <div class="mb-5 lg:mb-0">
+                            <h2 class="text-white text-2xl">Uottora Paribahan</h2>
+                            <p class="text-[#FFFFFFCC] text-xl">Confirm your ticket from anywhere and get discount</p>
+                         </div>
+                         <div>
+                            <h5 class="text-white text-xl">Download our App</h5>
+                            <img src="images/playstore.png" alt="">
+                         </div>
+                    </div>
+                    <div class="border-b-2 border-dashed border-gray-600 mt-5">
 
+                    </div>
+                    <div class="flex flex-col lg:flex-row justify-between mt-5">
+                        <p class="text-[#FFFFFFB3] mb-5 lg:mb-0">@all rights reserved, P-Ticket services limited.2024</p>
+                        <div class="flex gap-4 text-[#FFFFFF]">
+                            <p>Terms & condition</p>
+                            <p>Return & refund policy</p>
+                            <p>Privacy policy</p>
+                        </div>
+                    </div>
+
+                </div>
             </footer>
             <!-- script -->
             <script src="JS/utility.js"></script>
